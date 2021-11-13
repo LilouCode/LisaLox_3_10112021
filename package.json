@@ -4,16 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style expanded"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gerkx/maintainable-css-with-sass.git"
+    "url": "https://github.com/LilouCode/P3_Lox_Lisa"
   },
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gerkx/maintainable-css-with-sass/issues"
-  },
-  "homepage": "https://github.com/gerkx/maintainable-css-with-sass#readme"
+  "license": "UNLICENSED",
+  "private": true
 }
