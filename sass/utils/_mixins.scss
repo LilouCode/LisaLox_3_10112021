@@ -1,0 +1,16 @@
+@mixin btn {
+    color: white;
+    background: linear-gradient(to top, $colour-primary, $colour-secondary);
+    border: none;
+    box-shadow: 2px 4px 5px gray;
+    border-radius: 50px;
+    margin: 5%;
+    padding: 3% 5%;
+    width: max-content;
+    align-self: center;
+    font-size: 14px;
+}
+
+@mixin image {
+    
+}

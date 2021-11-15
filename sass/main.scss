@@ -15,3 +15,55 @@
 
 
 @import "./pages/menu";
+
+.header__logo{
+    box-shadow: 2px 4px 2px #C0C0C0;
+    margin-bottom: 1%;
+    padding: 5%;
+}
+
+.local{
+    background-color: #DCDCDC;
+    padding: 1%;
+}
+.description{
+    display: flex;
+    background-color: whitesmoke;
+    flex-direction: column;
+}
+.functioning{
+    display: flex;
+    flex-direction: column;
+}
+.restaurants{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &__grid{
+        display: flex;
+        flex-direction: column;
+        flex: 100%;
+        .grid__item{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+
+            .item__img{
+                flex: 60%;
+                display: flex;
+                .img__img{
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            .item__description{
+                display: flex;
+                flex: 25%;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+        }
+    }
+}

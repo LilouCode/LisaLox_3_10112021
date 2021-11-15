@@ -1,6 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap");
 body {
   box-sizing: border-box;
   background: white;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  font-family: "Shrikhand", cursive;
+  font-size: 20px;
+  text-align: center;
+}
+
+.local, .description {
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btn {
+  color: white;
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  border: none;
+  box-shadow: 2px 4px 5px gray;
+  border-radius: 50px;
+  margin: 5%;
+  padding: 3% 5%;
+  width: max-content;
+  align-self: center;
+  font-size: 14px;
+}
+
+.header__logo {
+  box-shadow: 2px 4px 2px #C0C0C0;
+  margin-bottom: 1%;
+  padding: 5%;
+}
+
+.local {
+  background-color: #DCDCDC;
+  padding: 1%;
+}
+
+.description {
+  display: flex;
+  background-color: whitesmoke;
+  flex-direction: column;
+}
+
+.functioning {
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.restaurants__grid {
+  display: flex;
+  flex-direction: column;
+  flex: 100%;
+}
+.restaurants__grid .grid__item {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.restaurants__grid .grid__item .item__img {
+  flex: 60%;
+  display: flex;
+}
+.restaurants__grid .grid__item .item__img .img__img {
+  width: 100%;
+  object-fit: cover;
+}
+.restaurants__grid .grid__item .item__description {
+  display: flex;
+  flex: 25%;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */
