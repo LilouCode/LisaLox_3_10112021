@@ -30,40 +30,15 @@
     display: flex;
     background-color: whitesmoke;
     flex-direction: column;
+
+    &__heading{
+        flex-wrap: wrap;
+    }
+    &__byline{
+        flex-wrap: wrap;
+    }
 }
 .functioning{
     display: flex;
     flex-direction: column;
-}
-.restaurants{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-
-    &__grid{
-        display: flex;
-        flex-direction: column;
-        flex: 100%;
-        .grid__item{
-            display: flex;
-            flex-direction: column;
-            width: 80%;
-
-            .item__img{
-                flex: 60%;
-                display: flex;
-                .img__img{
-                    width: 100%;
-                    object-fit: cover;
-                }
-            }
-            .item__description{
-                display: flex;
-                flex: 25%;
-                flex-direction: row;
-                justify-content: space-between;
-            }
-
-        }
-    }
 }
