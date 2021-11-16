@@ -4,27 +4,31 @@ body {
   background: white;
 }
 
+li {
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
 
-.header {
+h1 {
   font-family: "Shrikhand", cursive;
-  font-size: 20px;
-  text-align: center;
-}
-
-.local, .description {
+  font-size: 25px;
   text-align: center;
 }
 
 h2 {
-  font-size: 20px;
-  font-weight: 700;
+  margin-left: 2%;
 }
 
-h3 {
+.text__heading {
   font-size: 16px;
+  font-weight: 500;
+}
+.text__heading--byline {
   font-weight: 300;
 }
 
@@ -33,17 +37,34 @@ h4 {
   font-weight: 500;
 }
 
+h5 {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.local, .description {
+  margin: auto;
+  text-align: center;
+}
+
 .btn {
   color: white;
   background: linear-gradient(to top, #9356DC, #FF79DA);
   border: none;
   box-shadow: 2px 4px 5px gray;
   border-radius: 50px;
-  margin: 5%;
   padding: 3% 5%;
-  width: max-content;
+  width: fit-content;
   align-self: center;
   font-size: 14px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 2%;
 }
 
 .header__logo {
@@ -58,44 +79,59 @@ h4 {
 }
 
 .description {
-  display: flex;
   background-color: whitesmoke;
-  flex-direction: column;
-}
-.description__heading {
-  flex-wrap: wrap;
-}
-.description__byline {
-  flex-wrap: wrap;
 }
 
 .functioning {
-  display: flex;
-  flex-direction: column;
+  justify-content: space-around;
 }
 
-/*****************Ajout direct dans CSS***************/
-.functioning ol{
+.functioning ol {
+  margin: auto;
+  width: 280px;
+}
+
+.step {
+  display: flex;
+  flex-direction: row;
+}
+
+.step__num {
+  position: relative;
+  left: 10px;
+  padding: 1% 1.9%;
+  font-size: 10px;
+  color: white;
+  background-color: #9356DC;
+  border-radius: 80px;
   align-self: center;
 }
-.functioning li{
-  list-style-type: none;
+
+.step__text {
+  background-color: whitesmoke;
+  border-radius: 20px;
+  padding: 8% 12%;
+  flex: 60%;
+  box-shadow: 4px 5px 2px #DCDCDC;
 }
 
-.restaurants{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  background-color: grey;
+.list__step i {
+  margin-right: 10%;
+  font-size: 16px;
+  color: #b99a9a;
 }
 
-.restaurants__grid{
+.restaurants {
+  background-color: whitesmoke;
+}
+
+.restaurants__grid {
   display: flex;
   flex-direction: column;
   flex: 100%;
 }
 
-.grid__item{
+.grid__item {
   display: flex;
   flex-direction: column;
   width: 80%;
@@ -103,16 +139,15 @@ h4 {
   border-radius: 20px;
   background-color: white;
   margin: 2%;
-
 }
 
-.item__img{
+.item__img {
   flex: 60%;
   display: flex;
   object-fit: cover;
 }
 
-.img__img{
+.img__img {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   width: 100%;
@@ -121,7 +156,7 @@ h4 {
   object-fit: cover;
 }
 
-.item__description{
+.item__description {
   display: flex;
   flex: 25%;
   flex-direction: row;
@@ -129,22 +164,25 @@ h4 {
   padding: 5%;
 }
 
-.text__heading{
-  margin: 0%;
-}
-.text__byline{
+.text__heading {
   margin: 0%;
 }
 
-.description__text{
+.text__byline {
+  margin: 0%;
+}
+
+.description__text {
   display: flex;
   flex-direction: column;
 }
-.description__like{
+
+.description__like {
   font-size: 24px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   margin: 0% 2%;
 }
+
 /*# sourceMappingURL=style.css.map */
