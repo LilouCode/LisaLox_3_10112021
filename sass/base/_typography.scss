@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap");
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-primary;
 }
 
 header{
@@ -9,12 +9,12 @@ header{
 }
 
 h1 {
-    font-family: "Shrikhand", cursive;
+    font-family: $font-brand;
     font-size: 25px;
 }
 
 h2{
-    margin-left: 2%;
+    @include section-label
 }
 .text__heading{
     font-size: 16px;
@@ -37,4 +37,9 @@ h5{
 .local , .description{
     margin: auto;
     text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }

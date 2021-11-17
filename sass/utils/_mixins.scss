@@ -1,15 +1,32 @@
 @mixin btn {
-    color: white;
-    background: linear-gradient(to top, $colour-primary, $colour-secondary);
-    border: none;
-    box-shadow: 2px 4px 5px gray;
-    border-radius: 50px;
-    padding: 3% 5%;
-    width: fit-content;
-    align-self: center;
-    font-size: 14px;
+  color: white;
+  background: linear-gradient(to top, $colour-primary, $colour-secondary);
+  border: none;
+  box-shadow: 2px 4px 5px gray;
+  border-radius: 50px;
+  padding: 3% 5%;
+  margin-top: 8%;
+  margin-bottom: 10%;
+  width: 210px;
+  align-self: center;
+  font-size: 14px;
+}
+@mixin section-label {
+  margin-left: 2%;
+  margin-top: 8%;
+}
+@mixin image {
+  width: 100%;
+  height: 290px;
+  object-position: center;
+  object-fit: cover;
 }
 
-@mixin image {
-    
+@mixin image-grid {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  height: 190px;
+  object-position: center;
+  object-fit: cover;
 }

@@ -21,19 +21,19 @@
     
     <main class="main">
         
-        <section class="local">
+        <section class="wrapper local">
             <h4><i class="fas fa-map-marker-alt"></i> Paris, Belleville</h4>
         </section>
         
         <section class="wrapper description">
-            <h2 class="description__heading">Réservez le menu qui <br> vous convient</h2>
+            <h2 class="heading">Réservez le menu qui <br> vous convient</h2>
             <h3 class="text__heading text__heading--byline">Découvrez des restaurants d'exception, <br> sélectionnés par nos soins</h3>
-            <button class="description__btn , btn">Explorez nos restaurants</button>
+            <button class="btn">Explorez nos restaurants</button>
         </section>
         
         <section class="wrapper functioning">
-            <h2 class="heading functioning__heading">Fonctionnement</h2>
-            <ol class="functioning__list">
+            <h2 class="heading">Fonctionnement</h2>
+            <ol class="list">
                 <li class="list__step">
                     <h4 class="step__num">1</h4>
                     <h4 class="step__text"><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</h4>
@@ -49,64 +49,73 @@
             </ol>
         </section>
 
-        <section class="wrapper restaurants">
+        <section class="wrapper">
         
-            <h2 class="heading restaurants__heading">
+            <h2 class="heading">
                 Restaurants
             </h2>
         
-            <div class="restaurants__grid">
+            <div class="grid">
                 
                 <div class="grid__item">
-                    <div class="item__img">
-                        <img class="img__img" src="public\img\la-palette-du-gout-img.jpg" alt="La palette du goût">             
-                    </div>
-                    <div class="item__description">
-                        <div class="description__text">
-                            <h3 class="text__heading">La palette du goût</h3>
-                            <h3 class="text__heading text__heading--byline">Ménilmontant</h3>
+                    <a href="#">
+                        <div class="item__img">
+                            <img src="public/img/la-palette-du-gout-img.jpg" alt="La palette du goût">             
                         </div>
-                        <h4 class="description__like"><i class="far fa-heart"></i></h4>
-                    </div>
+                        <div class="item__description">
+                            <div class="description__text">
+                                <h3 class="text__heading">La palette du goût</h3>
+                                <h3 class="text__heading text__heading--byline">Ménilmontant</h3>
+                            </div>
+                            <h4 class="description__like"><i class="far fa-heart"></i></h4>
+                        </div>
+                    </a>
+                </div>
+                    
+                <div class="grid__item">
+                    <a href="#">
+                        <div class="item__img">
+                            <img src="public/img/la-note-enchantee-img.jpg" alt="La note enchantée">
+                        </div>
+                        <div class="item__description">
+                            <div class="description__text">
+                                <h3 class="text__heading">La note enchantée</h3>
+                                <h3 class="text__heading text__heading--byline">Charonne</h3>
+                            </div>
+                            <h4 class="description__like"><i class="far fa-heart"></i></h4>
+                        </div>
+                    </a>
                 </div>
 
                 <div class="grid__item">
-                    <div class="item__img">
-                        <img class="img__img" src="public\img\la-note-enchantee-img.jpg" alt="La note enchantée">
-                    </div>
-                    <div class="item__description">
-                        <div class="description__text">
-                            <h3 class="text__heading">La note enchantée</h3>
-                            <h3 class="text__heading text__heading--byline">Charonne</h3>
+                    <a href="menu-a-la-francaise.html">
+                        <div class="item__img">
+                            <img src="public/img/a-la-francaise-img.jpg" alt="À la française">
                         </div>
-                        <h4 class="description__like"><i class="far fa-heart"></i></h4>
-                    </div>
+                        <div class="item__description">
+                            <div class="description__text">
+                                <h3 class="text__heading">À la française</h3>
+                                <h3 class="text__heading text__heading--byline">Cité Rouge</h3>
+                            </div>
+                            <h4 class="description__like"><i class="far fa-heart"></i></h4>
+                        </div>
+                    </a>
                 </div>
+                
 
                 <div class="grid__item">
-                    <div class="item__img">
-                        <img class="img__img" src="public\img\a-la-francaise-img.jpg" alt="À la française">
-                    </div>
-                    <div class="item__description">
-                        <div class="description__text">
-                            <h3 class="text__heading">À la française</h3>
-                            <h3 class="text__heading text__heading--byline">Cité Rouge</h3>
+                    <a href="#">
+                        <div class="item__img">
+                            <img src="public/img/le délice-des-sens-img.jpg" alt="Le délice des sens">
                         </div>
-                        <h4 class="description__like"><i class="far fa-heart"></i></h4>
-                    </div>
-                </div>
-
-                <div class="grid__item">
-                    <div class="item__img">
-                        <img class="img__img" src="public\img\le délice-des-sens-img.jpg" alt="Le délice des sens">
-                    </div>
-                    <div class="item__description">
-                        <div class="description__text">
-                            <h3 class="text__heading">Le délice des sens</h3>
-                            <h3 class="text__heading text__heading--byline">Folie-Méricourt</h3>
+                        <div class="item__description">
+                            <div class="description__text">
+                                <h3 class="text__heading">Le délice des sens</h3>
+                                <h3 class="text__heading text__heading--byline">Folie-Méricourt</h3>
+                            </div>
+                            <h4 class="description__like"><i class="far fa-heart"></i></h4>
                         </div>
-                        <h4 class="description__like"><i class="far fa-heart"></i></h4>
-                    </div>
+                    </a>
                 </div>
                 
             </div>
@@ -114,8 +123,11 @@
     </main>
 
     <footer class="wrapper footer">
-        <img src="" alt="" class="footer__logo">
         <ul class="footer__list">
+            <li class="list__item">
+                <h5 class="item__label">Ohmyfood</h5>
+            </li>
+
             <li class="list__item">
                 <h5 class="item__label"><i class="fas fa-utensils"></i>Proposer un restaurant</h5>
             </li>
