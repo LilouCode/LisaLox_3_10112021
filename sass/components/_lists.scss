@@ -28,8 +28,14 @@ li{
   flex: 60%;
   box-shadow: 4px 5px 2px $medium-gray;
 }
-.list__step i {
-  margin-right: 10%;
-  font-size: 16px;
-  color: $medium-gray;
+.list__step {
+  & i{
+    margin-right: 10%;
+    font-size: 16px;
+    font-weight: 700;
+    color: darken($medium-gray, 50%);
+  }
+    &:hover i{
+      color: $colour-primary;
+    }
 }

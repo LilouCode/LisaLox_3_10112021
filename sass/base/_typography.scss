@@ -14,7 +14,13 @@ h1 {
 }
 
 h2{
-    @include section-label
+    @include section-title
+}
+.heading{
+    @include section-title;
+    &--brand{
+        font: $font-brand;
+    }
 }
 .text__heading{
     font-size: 16px;

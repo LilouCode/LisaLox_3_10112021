@@ -1,6 +1,13 @@
 .grid {
   display: flex;
   flex-direction: column;
+  background-color: $light-gray;
+  &--menu{
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    position: relative;
+    margin-top: -12%;
+  }
 }
 
 .grid__item {

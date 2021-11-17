@@ -4,12 +4,6 @@ body {
   background: white;
 }
 
-li {
-  list-style-type: none;
-  display: flex;
-  width: 100%;
-}
-
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -26,6 +20,14 @@ h1 {
 h2 {
   margin-left: 2%;
   margin-top: 8%;
+}
+
+.heading {
+  margin-left: 2%;
+  margin-top: 8%;
+}
+.heading--brand {
+  font: "Shrikhand", cursive;
 }
 
 .text__heading {
@@ -73,6 +75,13 @@ a {
 .grid {
   display: flex;
   flex-direction: column;
+  background-color: whitesmoke;
+}
+.grid--menu {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  position: relative;
+  margin-top: -12%;
 }
 
 .grid__item {
@@ -140,7 +149,6 @@ a {
 }
 
 .logo {
-  box-shadow: 2px 4px 2px #c0c0c0;
   margin-bottom: 1%;
   padding: 5%;
 }
@@ -183,7 +191,32 @@ li {
 .list__step i {
   margin-right: 10%;
   font-size: 16px;
-  color: #e8e8e8;
+  font-weight: 700;
+  color: dimgray;
+}
+.list__step:hover i {
+  color: #9356DC;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+nav a {
+  display: flex;
+  justify-content: center;
+}
+
+.page__nav i {
+  position: absolute;
+  align-self: center;
+  margin-left: -80%;
+}
+
+.page__nav h1 {
+  position: relative;
 }
 
 .wrapper {
@@ -222,6 +255,70 @@ footer {
   display: flex;
   flex-direction: column;
   background-color: whitesmoke;
+}
+
+.heading--brand {
+  font-family: "Shrikhand", cursive;
+  width: 80%;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sheet-menu {
+  margin-bottom: 10%;
+}
+
+.section-menu {
+  font-weight: 300;
+  text-transform: uppercase;
+  position: relative;
+  margin: 4% 1%;
+}
+
+.menu-underline {
+  position: absolute;
+  float: right;
+  font-size: 110px;
+  font-weight: 100;
+  color: #99E2D0;
+  margin-left: 2%;
+  margin-top: -120px;
+}
+
+.item-plat {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5%;
+  margin-bottom: 3%;
+  width: 90%;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.item-plat:hover__selection {
+  display: none;
+}
+
+.plat {
+  margin-left: 4%;
+  display: flex;
+  flex-direction: column;
+}
+.plat__name {
+  margin-bottom: 0%;
+}
+.plat__description {
+  margin-top: 1%;
+}
+.plat__prix {
+  margin-right: 4%;
+}
+.plat__selection {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
