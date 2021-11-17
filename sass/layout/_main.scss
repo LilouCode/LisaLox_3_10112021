@@ -3,12 +3,15 @@
   flex-direction: column;
 }
 
-main :nth-child(3) {
+.description{
+  background-color: $light-gray;
+}
+.functioning {
   justify-content: space-around;
 }
 
-main :nth-child(n + 4) {
+.restaurants {
   display: flex;
   flex-direction: column;
-  background-color: whitesmoke;
+  background-color: $light-gray;
 }

@@ -167,7 +167,7 @@ li {
   padding: 1% 1.9%;
   font-size: 10px;
   color: white;
-  background-color: #9356dc;
+  background-color: #9356DC;
   border-radius: 80px;
   align-self: center;
 }
@@ -177,13 +177,13 @@ li {
   border-radius: 20px;
   padding: 8% 12%;
   flex: 60%;
-  box-shadow: 4px 5px 2px gainsboro;
+  box-shadow: 4px 5px 2px #e8e8e8;
 }
 
 .list__step i {
   margin-right: 10%;
   font-size: 16px;
-  color: #b99a9a;
+  color: #e8e8e8;
 }
 
 .wrapper {
@@ -194,7 +194,7 @@ li {
 }
 
 .local {
-  background-color: gainsboro;
+  background-color: #e8e8e8;
 }
 
 footer {
@@ -202,12 +202,7 @@ footer {
   padding-top: 2%;
   padding-bottom: 0px;
   width: 100%;
-}
-
-.footer__list:first-child {
-  padding-bottom: 2%;
-  font-size: 15px;
-  font-family: "Shrikhand", cursive;
+  color: white;
 }
 
 .main {
@@ -215,11 +210,15 @@ footer {
   flex-direction: column;
 }
 
-main :nth-child(3) {
+.description {
+  background-color: whitesmoke;
+}
+
+.functioning {
   justify-content: space-around;
 }
 
-main :nth-child(n+4) {
+.restaurants {
   display: flex;
   flex-direction: column;
   background-color: whitesmoke;
