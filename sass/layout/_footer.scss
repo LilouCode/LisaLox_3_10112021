@@ -6,4 +6,10 @@ footer {
     color: white;
   }
 
-  
+.footer__list{
+  & h4{
+    font-family: $font-brand;
+    font-size: 20px;
+    margin-bottom: 5%;
+  }
+}

@@ -64,6 +64,12 @@ a {
   font-size: 14px;
 }
 
+.btn-check {
+  color: white;
+  background-color: #99E2D0;
+  border: transparent;
+}
+
 .grid {
   display: flex;
   flex-direction: column;
@@ -101,14 +107,13 @@ a {
   border-top-right-radius: 20px;
   width: 100%;
   height: 190px;
-  object-position: center;
+  object-position: bottom;
   object-fit: cover;
 }
 
 .image {
   width: 100%;
   height: 290px;
-  object-position: center;
   object-fit: cover;
 }
 
@@ -241,6 +246,12 @@ footer {
   color: white;
 }
 
+.footer__list h4 {
+  font-family: "Shrikhand", cursive;
+  font-size: 20px;
+  margin-bottom: 5%;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -295,21 +306,30 @@ footer {
   margin-left: 4%;
   margin-right: 4%;
   width: auto;
+  height: 79.5px;
   background-color: white;
   border-radius: 20px;
   box-shadow: 4px 5px 2px #e8e8e8;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .card-plat:hover {
   box-shadow: 8px 10px 4px #e8e8e8;
+}
+.card-plat:hover .plat__selection {
+  display: flex;
 }
 
 .plat {
   margin-left: 4%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .plat__name {
   margin-bottom: 0%;
+  overflow: hidden;
 }
 .plat__description {
   margin-top: 1%;
@@ -317,10 +337,22 @@ footer {
   font-weight: 300;
 }
 .plat__prix {
+  position: relative;
   margin-right: 4%;
 }
 .plat__selection {
-  display: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 79.5px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  flex-basis: 100px;
+  background-color: #99E2D0;
+}
+.plat__selection i {
+  color: white;
+  font-size: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */

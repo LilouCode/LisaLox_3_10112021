@@ -11,6 +11,12 @@
   align-self: center;
   font-size: 14px;
 }
+
+@mixin btn-check {
+  color: white;
+  background-color: $colour-tertiary;
+  border: transparent;
+}
 @mixin section-title {
   margin-left: 2%;
   margin-top: 8%;
@@ -18,7 +24,6 @@
 @mixin image {
   width: 100%;
   height: 290px;
-  object-position: center;
   object-fit: cover;
 }
 
@@ -27,6 +32,6 @@
   border-top-right-radius: 20px;
   width: 100%;
   height: 190px;
-  object-position: center;
+  object-position: bottom; 
   object-fit: cover;
 }
