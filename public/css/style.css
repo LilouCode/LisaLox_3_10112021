@@ -92,6 +92,7 @@ a {
 .item__img {
   flex: 60%;
   display: flex;
+  justify-content: flex-end;
   object-fit: cover;
 }
 
@@ -138,6 +139,16 @@ a {
   flex-direction: column;
   justify-content: flex-start;
   margin: 0% 2%;
+}
+
+.tag {
+  position: absolute;
+  background-color: #99E2D0;
+  color: #2c9c81;
+  margin: 5%;
+  padding: 1.5% 2% 1% 2%;
+  font-size: 12px;
+  border-radius: 2px;
 }
 
 .logo {

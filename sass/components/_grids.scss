@@ -26,6 +26,7 @@
 .item__img {
   flex: 60%;
   display: flex;
+  justify-content: flex-end;
   object-fit: cover;
 }
 
@@ -63,4 +64,15 @@
   flex-direction: column;
   justify-content: flex-start;
   margin: 0% 2%;
+}
+
+
+.tag{
+  position: absolute;
+  background-color: $colour-tertiary;
+  color: darken($color:$colour-tertiary, $amount: 35%);
+  margin: 5%;
+  padding: 1.5% 2% 1% 2%;
+  font-size: 12px;
+  border-radius: 2px;
 }
