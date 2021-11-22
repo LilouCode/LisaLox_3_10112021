@@ -52,6 +52,7 @@ a {
 
 .btn {
   color: white;
+  cursor: pointer;
   background: linear-gradient(to top, #9356DC, #FF79DA);
   border: none;
   box-shadow: 2px 4px 5px gray;
@@ -62,6 +63,10 @@ a {
   width: 210px;
   align-self: center;
   font-size: 14px;
+  transform: scale(1);
+}
+.btn:hover {
+  transform: scale(1.1);
 }
 
 .btn-check {
@@ -297,60 +302,70 @@ footer {
   color: #99E2D0;
 }
 
-.card-plat {
+.card {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
+  cursor: pointer;
   margin-bottom: 3%;
   margin-left: 4%;
   margin-right: 4%;
-  width: auto;
+  width: 90%;
   height: 79.5px;
   background-color: white;
   border-radius: 20px;
   box-shadow: 4px 5px 2px #e8e8e8;
   white-space: nowrap;
 }
-.card-plat:hover {
-  box-shadow: 8px 10px 4px #e8e8e8;
+.card:hover + card__actions {
+  transform: scale(1);
 }
-.card-plat:hover .plat__selection {
-  display: flex;
-}
-
-.plat {
-  margin-left: 4%;
-  display: flex;
+.card__header {
+  flex: 1;
+  display: flexbox;
   flex-direction: column;
+  justify-content: center;
+  padding-left: 2%;
 }
-.plat__name {
+.card__title {
+  width: 80%;
   margin-bottom: 0%;
   overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
-.plat__description {
+.card__subtitle {
+  width: 80%;
   margin-top: 1%;
   font-size: 16px;
   font-weight: 300;
+  overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
 }
-.plat__prix {
-  position: relative;
-  margin-right: 4%;
+.card__price {
+  width: 20px;
+  margin: auto;
+  align-self: center;
+  justify-self: flex-end;
 }
-.plat__selection {
-  display: flex;
-  display: none;
+.card__actions {
+  display: flexbox;
   justify-content: center;
-  height: 79.5px;
+  align-items: center;
+  width: 90px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  flex-basis: 100px;
   background-color: #99E2D0;
+  height: 79.5px;
+  margin-left: 4%;
+  transform: scale(1);
+  transition: transform 1000ms;
 }
-.plat__selection i {
-  color: white;
-  font-size: 25px;
+.card__actions button ::before {
+  opacity: 0;
+}
+.card__actions button ::after {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,6 @@
 @mixin btn {
   color: white;
+  cursor: pointer;
   background: linear-gradient(to top, $colour-primary, $colour-secondary);
   border: none;
   box-shadow: 2px 4px 5px gray;

@@ -1,85 +1,94 @@
-.heading{
-    &--brand{
-        font-family: $font-brand;
-        font-size: 20px;
-        width: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top: 0%;
-        margin-left: 8%;
-        margin-right: 8%;
-    }
-}
-.section-menu{
-    font-weight: 300;
-    text-transform: uppercase;
-    margin-left: 6%;
-    margin-bottom: 0%;
-}
-
-.menu-underline{
-    margin: -13px 5% 5% 6%;
-    font-size: 16px;
-    font-weight: 900;
-    color: $colour-tertiary;
-}
-
-
-.card-plat{
+.heading {
+  &--brand {
+    font-family: $font-brand;
+    font-size: 20px;
+    width: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 3%;
-    margin-left: 4%;
-    margin-right: 4%;
-    width: auto;
-    height: 79.5px;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: $shadow;
-    white-space: nowrap;
-    &:hover{
-        box-shadow: $shadow-hover;
-    }
-    &:hover .plat__selection{
-        display: flex;
-    }
+    margin-top: 0%;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+}
+.section-menu {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-left: 6%;
+  margin-bottom: 0%;
 }
 
-.plat{
+.menu-underline {
+  margin: -13px 5% 5% 6%;
+  font-size: 16px;
+  font-weight: 900;
+  color: $colour-tertiary;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  margin-bottom: 3%;
+  margin-left: 4%;
+  margin-right: 4%;
+  width: 90%;
+  height: 79.5px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: $shadow;
+  white-space: nowrap;
+  &:hover + card__actions{
+    transform: scale(1)
+}
+&__header {
+    flex: 1;
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2%;
+  }
+  &__title {
+      width: 80%;
+      margin-bottom: 0%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+  }
+  &__subtitle {
+      width: 80%;
+      margin-top: 1%;
+      font-size: 16px;
+      font-weight: 300;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+  }
+  &__price {
+      width: 20px;
+      margin: auto;
+      align-self: center;
+      justify-self: flex-end;
+  }
+  &__actions {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: $colour-tertiary;
+    height: 79.5px;
     margin-left: 4%;
-    display: flex;
-    flex-direction: column; 
-    // text-overflow: ellipsis;
-    &__name{
-        margin-bottom: 0%;
-        overflow: hidden;
-    }
-    &__description{
-        margin-top: 1%;
-        font-size: 16px;
-        font-weight: 300;
-        text-overflow: ellipsis;
-    }
-    &__prix{
-        position: relative;
-        margin-right: 4%;
-    }
-    &__selection{
-        // position: relative;
-        display: flex;
-        display: none;
-        justify-content: center;
-        height: 79.5px;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
-        flex-basis: 100px;
-        background-color: $colour-tertiary ;
-        & i{
-            color: white;
-            font-size: 25px;
+    transform: scale(1);
+    transition: transform 1000ms;
+    & button{
+        ::before{
+            opacity: 0;
+        }
+        ::after{
+            opacity: 1;
         }
     }
+  }
 }
