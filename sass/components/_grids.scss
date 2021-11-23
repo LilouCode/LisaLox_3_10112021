@@ -59,6 +59,17 @@
   display: flex;
   flex-direction: column;
 }
+.item__actions{
+  position: relative;
+  cursor: pointer;
+  &:hover{
+    & > .item__btn--mov{
+      transform: scaleY(1);
+      animation: mov 1000ms ease-in-out;
+      animation-fill-mode: both;
+    }
+  }
+}
 
 .item__btn {
   font-size: 24px;
@@ -67,12 +78,28 @@
   justify-content: flex-start;
   margin: 0% 2%;
   position: absolute;
+  z-index: 200;
+
   &--mov{
     position: relative;
-    color: $colour-tertiary;
+    z-index: 100;
+    color: $gradient-heart;
+    // transform-origin: ;
+    opacity: 0;
   }
 }
 
+@keyframes mov{
+  0%{
+    transform: scaleY(0);
+  }
+  90%,100%{
+    opacity: 1;
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
 
 .item__tag{
   position: absolute;

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+@keyframes btn-cta {}
 body {
   box-sizing: border-box;
   background: white;
@@ -55,7 +56,7 @@ a {
   cursor: pointer;
   background: linear-gradient(to top, #9356DC, #FF79DA);
   border: none;
-  box-shadow: 2px 4px 5px gray;
+  box-shadow: 4px 5px 2px #e8e8e8;
   border-radius: 50px;
   padding: 3% 5%;
   margin-top: 8%;
@@ -63,10 +64,10 @@ a {
   width: 210px;
   align-self: center;
   font-size: 14px;
-  transform: scale(1);
 }
 .btn:hover {
-  transform: scale(1.1);
+  background: linear-gradient(to top, #9b63df, #ff88de);
+  box-shadow: 2px 4px 5px 2px #cfcfcf;
 }
 
 .btn-check {
@@ -143,6 +144,16 @@ a {
   flex-direction: column;
 }
 
+.item__actions {
+  position: relative;
+  cursor: pointer;
+}
+.item__actions:hover > .item__btn--mov {
+  transform: scaleY(1);
+  animation: mov 1000ms ease-in-out;
+  animation-fill-mode: both;
+}
+
 .item__btn {
   font-size: 24px;
   display: flex;
@@ -150,12 +161,26 @@ a {
   justify-content: flex-start;
   margin: 0% 2%;
   position: absolute;
+  z-index: 200;
 }
 .item__btn--mov {
   position: relative;
-  color: #99E2D0;
+  z-index: 100;
+  color: #9356DC;
+  opacity: 0;
 }
 
+@keyframes mov {
+  0% {
+    transform: scaleY(0);
+  }
+  90%, 100% {
+    opacity: 1;
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
 .item__tag {
   position: absolute;
   background-color: #99E2D0;

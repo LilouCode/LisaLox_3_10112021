@@ -1,10 +1,11 @@
 .btn{
     @include btn;
-    transform: scale(1);
     &:hover{
-        transform: scale(1.1) 
+        background: linear-gradient(to top, $colour-primary--light, $colour-secondary--light);
+        box-shadow: $shadow-hover;
     }
 }
+
 
 .btn-check{
     @include btn-check
