@@ -1,4 +1,57 @@
 body {
-    box-sizing: border-box;
-    background: white;
+  box-sizing: border-box;
+  background: white;
+}
+$loader-mov-dur: 2000ms;
+$loader-mov-delay: 150ms;
+$pop-dur: $loader-mov-delay+ $loader-mov-dur;
+$page-loaded-delay: $pop-dur;
+
+.loader {
+  animation: pop $pop-dur linear;
+  &__circle {
+    border: 1px solid $colour-primary;
+    border-top: 2px solid $colour-secondary;
+    border-bottom: 2px solid $colour-tertiary;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin: auto;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    animation: spin $loader-mov-dur ease-out $loader-mov-delay infinite ;
+  }
+}
+@keyframes pop {
+  0% {
+    transform: translateX(0);
+  }
+  85%{
+      transform: translateX(0);
+  }
+  90%,100% {
+    transform: translateX(-9999px);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loaded {
+  animation: page-loaded 1ms $page-loaded-delay forwards;
+}
+@keyframes page-loaded {
+  to {
+    transform: translateX(-9999px);
+  }
+  from {
+    transform: translateX(0);
+  }
 }

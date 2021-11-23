@@ -5,6 +5,56 @@ body {
   background: white;
 }
 
+.loader {
+  animation: pop 2150ms linear;
+}
+.loader__circle {
+  border: 1px solid #9356DC;
+  border-top: 2px solid #FF79DA;
+  border-bottom: 2px solid #99E2D0;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  margin: auto;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  animation: spin 2000ms ease-out 150ms infinite;
+}
+
+@keyframes pop {
+  0% {
+    transform: translateX(0);
+  }
+  85% {
+    transform: translateX(0);
+  }
+  90%, 100% {
+    transform: translateX(-9999px);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loaded {
+  animation: page-loaded 1ms 2150ms forwards;
+}
+
+@keyframes page-loaded {
+  to {
+    transform: translateX(-9999px);
+  }
+  from {
+    transform: translateX(0);
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
 }
