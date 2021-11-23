@@ -66,9 +66,10 @@
   flex-direction: column;
   justify-content: flex-start;
   margin: 0% 2%;
-  position: relative;
+  position: absolute;
   &--mov{
-    position: absolute;
+    position: relative;
+    color: $colour-tertiary;
   }
 }
 
