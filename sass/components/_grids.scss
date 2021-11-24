@@ -64,9 +64,7 @@
   cursor: pointer;
   &:hover{
     & > .item__btn--mov{
-      transform: scaleY(1);
-      animation: mov 1000ms ease-in-out;
-      animation-fill-mode: both;
+      animation: mov 1200ms ease-in-out both;
     }
   }
 }
@@ -79,14 +77,15 @@
   margin: 0% 2%;
   position: absolute;
   z-index: 200;
-
-  &--mov{
-    position: relative;
-    z-index: 100;
-    color: $gradient-heart;
-    // transform-origin: ;
-    opacity: 0;
-  }
+  background-color: $color-heart;
+  padding: 2%;
+  
+}
+.item__btn--mov{
+  @include btn-heart;
+  position: relative;
+  z-index: 100;
+  opacity: 0;
 }
 
 @keyframes mov{

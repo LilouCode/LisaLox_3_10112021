@@ -41,7 +41,7 @@ $page-loaded-delay: $pop-dur;
       right: 0%;
       top: 0%;
       bottom: 0%;
-      animation: spin 900ms linear 1s infinite reverse;
+      animation: spin 700ms cubic-bezier(1,.04,.84,1.18) 1s infinite reverse;
     }
     &--xsmall{
       border: solid 1px $colour-primary--light;
@@ -55,7 +55,8 @@ $page-loaded-delay: $pop-dur;
       right: 0%;
       top: 0%;
       bottom: 0%;
-      animation: spin 900ms linear 1s infinite reverse;
+      animation: spin 500ms cubic-bezier(1,.04,.84,1.18) 1s infinite reverse;
+      
     }
   }
   &__icone{

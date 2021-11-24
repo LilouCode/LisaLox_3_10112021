@@ -4,6 +4,7 @@ $colour-tertiary: #99E2D0;
 $colour-primary--light: lighten($colour-primary,3%);
 $colour-secondary--light: lighten($colour-secondary,3%);
 $color-btn: linear-gradient(to top, $colour-primary, $colour-secondary);
+$color-heart: linear-gradient(to top, $colour-primary, $colour-secondary);
 $light-gray: whitesmoke;
 $medium-gray: darken(whitesmoke, 5%);
 $dark-gray: darken(whitesmoke,80%);
