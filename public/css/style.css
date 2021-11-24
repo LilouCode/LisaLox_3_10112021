@@ -185,6 +185,7 @@ a {
   align-self: center;
   border-radius: 20px;
   background-color: white;
+  box-shadow: 4px 5px 2px #e8e8e8;
   margin: 2%;
 }
 .item--menu {
