@@ -454,8 +454,8 @@ footer {
   box-shadow: 4px 5px 2px #e8e8e8;
   white-space: nowrap;
 }
-.card:hover + card__actions {
-  transform: scale(1);
+.card:hover > .card__actions {
+  animation: selection 200ms ease 300ms forwards;
 }
 .card__header {
   flex: 1;
@@ -486,18 +486,19 @@ footer {
   width: 20px;
   height: 100%;
   margin: auto;
-  justify-items: center;
   padding-right: 5%;
-  justify-self: flex-end;
+  padding-top: 43px;
 }
 .card__actions {
   display: flexbox;
-  width: 80px;
+  width: 0px;
+  opacity: 0;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   background-color: #99E2D0;
   height: 79.5px;
   margin-left: 4%;
+  transform-origin: right;
 }
 .card__actions button {
   display: flexbox;
@@ -505,6 +506,18 @@ footer {
   width: 90%;
   height: 90%;
   font-size: 25px;
+}
+
+@keyframes selection {
+  0% {
+    width: 0;
+  }
+  90%, 100% {
+    opacity: 1;
+  }
+  100% {
+    width: 80px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

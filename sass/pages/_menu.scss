@@ -38,10 +38,12 @@
   border-radius: 20px;
   box-shadow: $shadow;
   white-space: nowrap;
-  &:hover + card__actions{
-    transform: scale(1)
-}
-&__header {
+  &:hover {
+    & > .card__actions {
+    animation: selection 200ms ease 300ms forwards;
+    }
+  }
+  &__header {
     flex: 1;
     display: flexbox;
     flex-direction: column;
@@ -49,47 +51,58 @@
     padding-left: 2%;
   }
   &__title {
-      width: 90%;
-      margin-bottom: 0%;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
+    width: 90%;
+    margin-bottom: 0%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
   &__subtitle {
-      width: 80%;
-      margin-top: 1%;
-      font-size: 16px;
-      font-weight: 300;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
+    width: 80%;
+    margin-top: 1%;
+    font-size: 16px;
+    font-weight: 300;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
   &__price {
-      font-size: 15px;
-      font-weight: 500;
-      width: 20px;
-      height: 100%;
-      margin: auto;
-      justify-items: center;
-      padding-right: 5%;
-      justify-self: flex-end;
+    font-size: 15px;
+    font-weight: 500;
+    width: 20px;
+    height: 100%;
+    margin: auto;
+    padding-right: 5%;
+    padding-top: 43px;
   }
   &__actions {
     display: flexbox;
-    width: 80px;
-    // width: 0%;
-    // opacity: 0;
+    width: 0px;
+    opacity: 0;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     background-color: $colour-tertiary;
     height: 79.5px;
     margin-left: 4%;
-    & button{
+    transform-origin: right;
+    & button {
       display: flexbox;
       margin-top: 4%;
       width: 90%;
       height: 90%;
       font-size: 25px;
     }
+  }
+}
+
+@keyframes selection {
+  0%{
+    width: 0;
+  }
+  90%,100%{
+    opacity: 1;
+  }
+  100% {
+    width: 80px;
   }
 }
