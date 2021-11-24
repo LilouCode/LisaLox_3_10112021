@@ -8,7 +8,7 @@ $pop-dur: $loader-mov-delay+ $loader-mov-dur;
 $page-loaded-delay: $pop-dur;
 
 .loader {
-  animation: pop 3s ease-in forwards;
+  animation: pop 2900ms ease-in forwards;
   background-color:white;
   position: absolute;
   width: 100%;
@@ -19,7 +19,9 @@ $page-loaded-delay: $pop-dur;
     border-top-color: $colour-secondary--light;
     border-left-color: lighten($color: $colour-secondary--light, $amount: 10%) ;
     border-bottom-color: lighten($color: $colour-secondary--light, $amount: 10%);
+    border-right-color: white;
     border-radius: 50%;
+    box-shadow: 2px 1px lighten($color:$colour-secondary--light, $amount: 10%);
     width: 50px;
     height: 50px;
     position: absolute;
@@ -28,10 +30,11 @@ $page-loaded-delay: $pop-dur;
     right: 0%;
     top: 0%;
     bottom: 0%;
-    animation: spin 900ms linear 1s infinite;
+    animation: spin 600ms linear infinite;
     &--small{
-      border: solid 3px $colour-tertiary;
+      border: solid 4px $colour-tertiary;
       border-top-color: lighten($color:$colour-tertiary, $amount: 10%);
+      border-left-color: white;
       border-radius: 50%;
       width: 50px;
       height: 50px;
@@ -41,12 +44,15 @@ $page-loaded-delay: $pop-dur;
       right: 0%;
       top: 0%;
       bottom: 0%;
-      animation: spin 700ms cubic-bezier(1,.04,.84,1.18) 1s infinite reverse;
+      animation: spin 700ms linear infinite reverse;
     }
     &--xsmall{
-      border: solid 1px $colour-primary--light;
-      border-top-color: lighten($color:$colour-primary--light, $amount: 20%);
+      border: solid 1px whitesmoke;
+      border-top-color: lighten($color:$colour-primary--light, $amount: 10%);
+      border-right-color: lighten($color:$colour-primary--light, $amount: 10%);
+      border-left-color: white;
       border-radius: 50%;
+      box-shadow: 5px 2px lighten($color:$colour-primary--light, $amount: 10%);
       width: 50px;
       height: 50px;
       position: absolute;
@@ -55,7 +61,7 @@ $page-loaded-delay: $pop-dur;
       right: 0%;
       top: 0%;
       bottom: 0%;
-      animation: spin 500ms cubic-bezier(1,.04,.84,1.18) 1s infinite reverse;
+      animation: spin 900ms linear 10ms infinite reverse;
       
     }
   }
@@ -70,7 +76,7 @@ $page-loaded-delay: $pop-dur;
     bottom: 0%;
   }
 }
-.fa-utensils{
+.iload{
   position: relative;
  font-size: 30px;
  margin-top: 10px;
