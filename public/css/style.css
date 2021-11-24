@@ -170,6 +170,7 @@ a {
   display: flex;
   flex-direction: column;
   background-color: whitesmoke;
+  padding-bottom: 5%;
 }
 .grid--menu {
   border-top-left-radius: 50px;
