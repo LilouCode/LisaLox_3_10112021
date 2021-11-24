@@ -8,32 +8,85 @@ $pop-dur: $loader-mov-delay+ $loader-mov-dur;
 $page-loaded-delay: $pop-dur;
 
 .loader {
-  animation: pop $pop-dur linear;
+  animation: pop 3s ease-in forwards;
+  background-color:white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
   &__circle {
-    border: 1px solid $colour-primary;
-    border-top: 2px solid $colour-secondary;
-    border-bottom: 2px solid $colour-tertiary;
+    border: 7px solid $colour-secondary;
+    border-top-color: $colour-secondary--light;
+    border-left-color: lighten($color: $colour-secondary--light, $amount: 10%) ;
+    border-bottom-color: lighten($color: $colour-secondary--light, $amount: 10%);
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     position: absolute;
     margin: auto;
     left: 0%;
     right: 0%;
     top: 0%;
     bottom: 0%;
-    animation: spin $loader-mov-dur ease-out $loader-mov-delay infinite ;
+    animation: spin 900ms linear 1s infinite;
+    &--small{
+      border: solid 3px $colour-tertiary;
+      border-top-color: lighten($color:$colour-tertiary, $amount: 10%);
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      margin: auto;
+      left: 0%;
+      right: 0%;
+      top: 0%;
+      bottom: 0%;
+      animation: spin 900ms linear 1s infinite reverse;
+    }
+    &--xsmall{
+      border: solid 1px $colour-primary--light;
+      border-top-color: lighten($color:$colour-primary--light, $amount: 20%);
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      margin: auto;
+      left: 0%;
+      right: 0%;
+      top: 0%;
+      bottom: 0%;
+      animation: spin 900ms linear 1s infinite reverse;
+    }
+  }
+  &__icone{
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    margin: auto;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
   }
 }
+.fa-utensils{
+  position: relative;
+ font-size: 30px;
+ margin-top: 10px;
+ margin-left: 120px;
+ color: $colour-primary;
+}
+
 @keyframes pop {
   0% {
-    transform: translateX(0);
+    opacity: 1;
   }
-  85%{
-      transform: translateX(0);
+  85% {
+    opacity: 1;
   }
-  90%,100% {
-    transform: translateX(-9999px);
+  100% {
+    opacity: 0;
+    z-index: -1;
   }
 }
 @keyframes spin {
@@ -42,16 +95,5 @@ $page-loaded-delay: $pop-dur;
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-.loaded {
-  animation: page-loaded 1ms $page-loaded-delay forwards;
-}
-@keyframes page-loaded {
-  to {
-    transform: translateX(-9999px);
-  }
-  from {
-    transform: translateX(0);
   }
 }
