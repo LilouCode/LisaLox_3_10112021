@@ -39,9 +39,13 @@
   box-shadow: $shadow;
   white-space: nowrap;
   &:hover {
-    & > .card__actions {
-    animation: selection 200ms ease 300ms forwards;
+    & > .card__actions .fa-check-circle{
+      animation: spin 700ms linear  forwards;
     }
+    & > .card__actions {
+    animation: selection 200ms 300ms ease forwards;
+    }
+   
   }
   &__header {
     flex: 1;
@@ -84,7 +88,7 @@
     background-color: $colour-tertiary;
     height: 79.5px;
     margin-left: 4%;
-    transform-origin: right;
+    transform-origin: bottom;
     & button {
       display: flexbox;
       margin-top: 4%;

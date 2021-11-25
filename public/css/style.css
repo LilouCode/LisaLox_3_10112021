@@ -454,8 +454,11 @@ footer {
   box-shadow: 4px 5px 2px #e8e8e8;
   white-space: nowrap;
 }
+.card:hover > .card__actions .fa-check-circle {
+  animation: spin 700ms linear forwards;
+}
 .card:hover > .card__actions {
-  animation: selection 200ms ease 300ms forwards;
+  animation: selection 200ms 300ms ease forwards;
 }
 .card__header {
   flex: 1;
@@ -498,7 +501,7 @@ footer {
   background-color: #99E2D0;
   height: 79.5px;
   margin-left: 4%;
-  transform-origin: right;
+  transform-origin: bottom;
 }
 .card__actions button {
   display: flexbox;
