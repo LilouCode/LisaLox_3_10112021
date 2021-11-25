@@ -247,7 +247,7 @@ a {
   cursor: pointer;
 }
 .item__actions:hover > .item__btn--mov {
-  animation: mov 1200ms ease-in-out both;
+  animation: mov 500ms ease-in-out both;
 }
 
 .item__btn {
@@ -258,7 +258,6 @@ a {
   margin: 0% 2%;
   position: absolute;
   z-index: 200;
-  background-color: linear-gradient(to top, #9356DC, #FF79DA);
   padding: 2%;
 }
 
@@ -389,10 +388,21 @@ footer {
   color: white;
 }
 
-.footer__list h4 {
+.list__text {
+  width: 100%;
+  font-weight: 300;
+  margin: 1% 3%;
+  font-size: 12px;
+  color: white;
+}
+.list__text--logo {
   font-family: "Shrikhand", cursive;
   font-size: 20px;
-  margin-bottom: 5%;
+  margin-bottom: 4%;
+}
+.list__icone {
+  margin-right: 2%;
+  width: 10px;
 }
 
 .main {
@@ -424,6 +434,36 @@ footer {
   margin-top: 0%;
   margin-left: 8%;
   margin-right: 8%;
+  position: relative;
+}
+.heading__actions {
+  display: flex;
+  position: relative;
+}
+.heading__actions:hover .btn__icone--mov {
+  animation: mov 500ms ease-in-out both;
+}
+
+.btn__icone {
+  z-index: 200;
+  cursor: pointer;
+  position: relative;
+}
+.btn__icone--mov {
+  color: black;
+  cursor: pointer;
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  border: none;
+  padding: 3%;
+  align-self: center;
+  font-size: 24px;
+  font-size: 29px;
+  position: absolute;
+  z-index: 100;
+  opacity: 0;
 }
 
 .section-menu {
@@ -453,8 +493,9 @@ footer {
   border-radius: 20px;
   box-shadow: 4px 5px 2px #e8e8e8;
   white-space: nowrap;
+  animation: fade-in-bottom 1000ms cubic-bezier(0.39, 0.575, 0.565, 1) 200ms both;
 }
-.card:hover > .card__actions .fa-check-circle {
+.card:hover > .card__actions .check {
   animation: spin 700ms linear forwards;
 }
 .card:hover > .card__actions {
@@ -509,6 +550,7 @@ footer {
   width: 90%;
   height: 90%;
   font-size: 25px;
+  cursor: pointer;
 }
 
 @keyframes selection {
@@ -520,6 +562,27 @@ footer {
   }
   100% {
     width: 80px;
+  }
+}
+@keyframes fade-in-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes mov {
+  0% {
+    transform: scaleY(0);
+  }
+  90%, 100% {
+    opacity: 1;
+  }
+  100% {
+    transform: scaleY(1);
   }
 }
 
