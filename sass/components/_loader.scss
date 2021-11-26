@@ -1,0 +1,101 @@
+$loader-mov-dur: 2000ms;
+$loader-mov-delay: 150ms;
+$pop-dur: $loader-mov-delay+ $loader-mov-dur;
+$page-loaded-delay: $pop-dur;
+.loader {
+    animation: pop 2900ms ease-in forwards;
+    background-color:white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    &__circle {
+      border: 7px solid $colour-secondary;
+      border-top-color: $colour-secondary--light;
+      border-left-color: lighten($color: $colour-secondary--light, $amount: 10%) ;
+      border-bottom-color: lighten($color: $colour-secondary--light, $amount: 10%);
+      border-right-color: white;
+      border-radius: 50%;
+      box-shadow: 2px 1px lighten($color:$colour-secondary--light, $amount: 10%);
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      margin: auto;
+      left: 0%;
+      right: 0%;
+      top: 0%;
+      bottom: 0%;
+      animation: spin 600ms linear infinite;
+      &--small{
+        border: solid 4px $colour-tertiary;
+        border-top-color: lighten($color:$colour-tertiary, $amount: 10%);
+        border-left-color: white;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        margin: auto;
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+        animation: spin 700ms linear infinite reverse;
+      }
+      &--xsmall{
+        border: solid 1px whitesmoke;
+        border-top-color: lighten($color:$colour-primary--light, $amount: 10%);
+        border-right-color: lighten($color:$colour-primary--light, $amount: 10%);
+        border-left-color: white;
+        border-radius: 50%;
+        box-shadow: 5px 2px lighten($color:$colour-primary--light, $amount: 10%);
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        margin: auto;
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+        animation: spin 900ms linear 10ms infinite reverse;
+        
+      }
+    }
+    &__icone{
+      width: 150px;
+      height: 50px;
+      position: absolute;
+      margin: auto;
+      left: 0%;
+      right: 0%;
+      top: 0%;
+      bottom: 0%;
+    }
+  }
+  .iload{
+    position: relative;
+   font-size: 30px;
+   margin-top: 10px;
+   margin-left: 120px;
+   color: $colour-primary;
+  }
+  
+  @keyframes pop {
+    0% {
+      opacity: 1;
+    }
+    85% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      z-index: -1;
+    }
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

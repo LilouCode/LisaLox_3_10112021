@@ -39,7 +39,17 @@ h5{
     margin: auto;
     text-align: center;
 }
-
+.description .heading{
+    align-self: center;
+    width: 50%;
+    @media (min-width: 768px){
+        width: 90%;
+    }
+}
+.description .item__subtitle{
+    align-self: center;
+    width: 70%;
+}
 a{
     text-decoration: none;
     color: black;

@@ -51,8 +51,7 @@
   cursor: pointer;
   margin-bottom: 3%;
   margin-left: 4%;
-  margin-right: 4%;
-  width: 90%;
+  width: 88%;
   height: 79.5px;
   background-color: white;
   border-radius: 20px;
@@ -76,7 +75,7 @@
   }
   &__title {
     width: 90%;
-    margin-bottom: 0%;
+    margin-bottom: -1%;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -84,9 +83,11 @@
   &__subtitle {
     width: 80%;
     margin-top: 1%;
+    margin-bottom: -2%;
     font-size: 16px;
     font-weight: 300;
     overflow: hidden;
+    height: fit-content;
     white-space: nowrap;
     text-overflow: ellipsis;
   }
