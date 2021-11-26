@@ -4,28 +4,6 @@ body {
   background: white;
 }
 
-@media (min-width: 768px) {
-  .description {
-    background-color: pink;
-  }
-  .description .heading {
-    width: 100%;
-  }
-  .description .item__subtitle {
-    align-self: center;
-    width: 100%;
-  }
-
-  .functioning {
-    justify-content: space-around;
-  }
-
-  .restaurants {
-    display: flex;
-    flex-direction: column;
-    background-color: whitesmoke;
-  }
-}
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -80,6 +58,11 @@ h5 {
 .description .item__subtitle {
   align-self: center;
   width: 70%;
+}
+@media (min-width: 768px) {
+  .description .item__subtitle {
+    width: 90%;
+  }
 }
 
 a {
