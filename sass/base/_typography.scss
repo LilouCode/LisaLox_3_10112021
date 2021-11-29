@@ -42,14 +42,14 @@ h5{
 .description .heading{
     align-self: center;
     width: 50%;
-    @media (min-width: 768px){
+    @include tablette-only{
         width: 90%;
     }
 }
 .description .item__subtitle{
     align-self: center;
     width: 70%;
-    @media (min-width: 768px){
+    @include tablette-only{
         width: 90%;
     } 
 }

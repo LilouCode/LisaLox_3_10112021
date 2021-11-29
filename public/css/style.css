@@ -49,7 +49,7 @@ h5 {
   align-self: center;
   width: 50%;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .description .heading {
     width: 90%;
   }
@@ -59,7 +59,7 @@ h5 {
   align-self: center;
   width: 70%;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .description .item__subtitle {
     width: 90%;
   }
@@ -77,10 +77,9 @@ a {
   border: none;
   box-shadow: 4px 5px 2px #e8e8e8;
   border-radius: 50px;
-  padding: 3% 5%;
+  padding: 14px 7%;
   margin-top: 8%;
   margin-bottom: 10%;
-  width: 210px;
   align-self: center;
   font-size: 14px;
 }
