@@ -3,11 +3,18 @@
   flex-direction: column;
   background-color: $light-gray;
   padding-bottom: 5%;
-  &--menu{
+  @include tablette-only {
+    margin-bottom: 4%;
+  }
+  &--menu {
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     position: relative;
     margin-top: -12%;
+    @include tablette-only {
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
   }
 }
 
@@ -20,7 +27,7 @@
   background-color: white;
   box-shadow: $shadow;
   margin: 2%;
-  &--menu{
+  &--menu {
     width: 100%;
   }
 }
@@ -35,7 +42,6 @@
 .item__img {
   @include image-grid;
 }
-
 
 .image {
   @include image;
@@ -57,15 +63,15 @@
   margin: 0%;
 }
 
-.item__header{
+.item__header {
   display: flex;
   flex-direction: column;
 }
-.item__actions{
+.item__actions {
   position: relative;
   cursor: pointer;
-  &:hover{
-    & > .item__btn--mov{
+  &:hover {
+    & > .item__btn--mov {
       animation: mov 500ms ease-in-out both;
     }
   }
@@ -80,20 +86,20 @@
   position: absolute;
   z-index: 200;
   padding: 2%;
-  
 }
-.item__btn--mov{
+.item__btn--mov {
   @include btn-heart;
   position: relative;
   z-index: 100;
   opacity: 0;
 }
 
-@keyframes mov{
-  0%{
+@keyframes mov {
+  0% {
     transform: scaleY(0);
   }
-  90%,100%{
+  90%,
+  100% {
     opacity: 1;
   }
   100% {
@@ -101,10 +107,10 @@
   }
 }
 
-.item__tag{
+.item__tag {
   position: absolute;
   background-color: $colour-tertiary;
-  color: darken($color:$colour-tertiary, $amount: 35%);
+  color: darken($color: $colour-tertiary, $amount: 35%);
   margin: 5%;
   padding: 1.5% 2% 1% 2%;
   font-size: 12px;
