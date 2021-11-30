@@ -9,6 +9,9 @@
 
 .functioning {
   justify-content: space-around;
+  @include desktop-only{
+    margin-bottom: $spacebot;
+  }
 }
 
 .restaurants {

@@ -1,17 +1,25 @@
-$colour-primary: #9356DC;
-$colour-secondary: #FF79DA;
-$colour-tertiary: #99E2D0;
-$colour-primary--light: lighten($colour-primary,3%);
-$colour-secondary--light: lighten($colour-secondary,3%);
+// les couleurs
+//principales
+$colour-primary: #9356dc;
+$colour-secondary: #ff79da;
+$colour-tertiary: #99e2d0;
+//modifiees
+$colour-primary--light: lighten($colour-primary, 3%);
+$colour-secondary--light: lighten($colour-secondary, 3%);
 $color-btn: linear-gradient(to top, $colour-primary, $colour-secondary);
 $color-heart: linear-gradient(to top, $colour-primary, $colour-secondary);
 $light-gray: whitesmoke;
 $medium-gray: darken(whitesmoke, 5%);
-$dark-gray: darken(whitesmoke,80%);
+$dark-gray: darken(whitesmoke, 80%);
 $gradient-heart: $colour-primary;
 
+//la typographie
 $font-brand: "Shrikhand", cursive;
-$font-primary: 'Roboto', sans-serif;
+$font-primary: "Roboto", sans-serif;
 
-$shadow:4px 5px 2px $medium-gray;
-$shadow-hover: 2px 4px 5px 2px darken(whitesmoke,15%);
+//les ombres
+$shadow: 4px 5px 2px $medium-gray;
+$shadow-hover: 2px 4px 5px 2px darken(whitesmoke, 15%);
+
+// pour les margins bottoms
+$spacebot: 4%;

@@ -10,6 +10,9 @@
   margin-bottom: 10%;
   align-self: center;
   font-size: 14px;
+  @include tablette-only{
+    padding: 17px 37px;
+  }
 }
 
 @mixin btn-heart {
@@ -50,6 +53,9 @@
   height: 190px;
   object-position: bottom;
   object-fit: cover;
+  @include tablette-only{
+    height: 200px;
+  }
 }
 
 @mixin desktop-only {

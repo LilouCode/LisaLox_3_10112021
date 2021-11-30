@@ -1,12 +1,20 @@
 ol {
+  display: flex;
+  flex-direction: column;
   margin: auto;
-  width: 280px;
+  
+  @include desktop-only{
+    margin-left: 5%;
+    margin-right: 5%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 li{
     list-style-type: none;
     display: flex;
     width: 100%;
-}
+  }
 .step {
   display: flex;
   flex-direction: row;
@@ -29,6 +37,7 @@ li{
   box-shadow: 4px 5px 2px $medium-gray;
 }
 .list__step {
+  width: 280px;
   & i{
     margin-right: 10%;
     font-size: 16px;
