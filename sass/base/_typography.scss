@@ -18,6 +18,9 @@ h1 {
 
 .heading{
     @include section-title;
+    &--center{
+        padding-left: 0%;
+    }
 }
 
 .item{
