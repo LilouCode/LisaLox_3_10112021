@@ -74,6 +74,9 @@ h5 {
   text-align: center;
 }
 
+.local h4 {
+  margin: 4%;
+}
 @media screen and (min-width: 768px) {
   .local h4 {
     font-size: 12px;
@@ -580,9 +583,17 @@ footer ul {
 }
 
 .local {
+  flex-direction: row;
+  justify-content: center;
   box-shadow: -1px -3px 2px 0px #cfcfcf;
   -webkit-box-shadow: -1px -3px 3px 0px #cfcfcf;
   -moz-box-shadow: -1px -3px 2px 0px #cfcfcf;
+}
+.local i {
+  align-self: center;
+  margin-top: -2%;
+  position: absolute;
+  left: 110px;
 }
 
 .description {
