@@ -12,9 +12,13 @@ header{
 }
 
 .heading{
-    @include section-title;
+    padding-left: $padding-section;
+    margin-top: 12%;
     &--center{
+        align-self: center;
+        width: 250px;
         padding-left: 0%;
+        margin-top: 10%;
     }
 }
 .logo{
@@ -33,6 +37,7 @@ header{
         }
     }
     &__subtitle{
+        font-size: 18px;
         font-weight: 300;
         @include desktop-only{
             font-weight: 400;
@@ -41,14 +46,6 @@ header{
     }
 }
 
-h3{
-    font-size: 14px;
-}
-
-h4{
-    font-size: 14px;
-    font-weight: 500;
-}
 
 h5{
     font-size: 12px;
@@ -77,7 +74,7 @@ h5{
 }
 .description .item__subtitle{
     align-self: center;
-    width: 70%;
+    width: 90%;
     @include tablette-only{
         width: 90%;
     } 
