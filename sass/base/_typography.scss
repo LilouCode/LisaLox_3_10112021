@@ -11,18 +11,16 @@ header{
     }
 }
 
-h1 {
-    font-family: $font-brand;
-    font-size: 25px;
-}
-
 .heading{
     @include section-title;
     &--center{
         padding-left: 0%;
     }
 }
-
+.logo{
+    font-size: 29px;
+    font-family: $font-brand;
+}
 .item{
     font-size: 16px;
     font-weight: 500;

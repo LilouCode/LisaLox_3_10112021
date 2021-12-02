@@ -17,11 +17,6 @@ header {
   }
 }
 
-h1 {
-  font-family: "Shrikhand", cursive;
-  font-size: 25px;
-}
-
 .heading {
   padding-left: 4.5%;
   margin-top: 8%;
@@ -29,6 +24,11 @@ h1 {
 }
 .heading--center {
   padding-left: 0%;
+}
+
+.logo {
+  font-size: 29px;
+  font-family: "Shrikhand", cursive;
 }
 
 .item {
@@ -322,11 +322,6 @@ a {
   }
 }
 
-.logo {
-  margin-bottom: 1%;
-  padding: 5%;
-}
-
 ol {
   display: flex;
   flex-direction: column;
@@ -577,6 +572,11 @@ footer ul {
   .list__icone {
     margin-right: 1%;
   }
+}
+
+.logo {
+  margin-top: 6%;
+  margin-bottom: 4%;
 }
 
 .local {
