@@ -36,7 +36,6 @@ li{
 }
 .step__text {
   display: flex;
-  font-size: 18px;
   background-color: $light-gray;
   border-radius: 20px;
   padding: 8% 12%;
@@ -47,7 +46,7 @@ li{
   }
 }
 .list__step {
-  width: 350px;
+  width: 300px;
   & i{
     margin-right: 10%;
     color: darken($medium-gray, 50%);

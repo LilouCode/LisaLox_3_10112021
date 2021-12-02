@@ -40,6 +40,7 @@
 @mixin section-title {
   padding-left: $padding-section;
   margin-top: 8%;
+  width: 100px;
 }
 
 // les images
@@ -62,6 +63,13 @@
   @include tablette-only {
     height: 200px;
   }
+}
+
+//ombres générées avec cssgenerator.org
+@mixin shadow-top {
+    box-shadow: -1px -3px 2px 0px  darken(whitesmoke, 15%);
+    -webkit-box-shadow: -1px -3px 3px 0px  darken(whitesmoke, 15%);
+    -moz-box-shadow: -1px -3px 2px 0px  darken(whitesmoke, 15%);
 }
 
 //les medias queries

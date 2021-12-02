@@ -25,6 +25,7 @@ h1 {
 .heading {
   padding-left: 4.5%;
   margin-top: 8%;
+  width: 100px;
 }
 .heading--center {
   padding-left: 0%;
@@ -369,7 +370,6 @@ li {
 
 .step__text {
   display: flex;
-  font-size: 18px;
   background-color: whitesmoke;
   border-radius: 20px;
   padding: 8% 12%;
@@ -381,7 +381,7 @@ li {
 }
 
 .list__step {
-  width: 350px;
+  width: 300px;
 }
 .list__step i {
   margin-right: 10%;
@@ -579,9 +579,10 @@ footer ul {
   }
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
+.local {
+  box-shadow: -1px -3px 2px 0px #cfcfcf;
+  -webkit-box-shadow: -1px -3px 3px 0px #cfcfcf;
+  -moz-box-shadow: -1px -3px 2px 0px #cfcfcf;
 }
 
 .description {

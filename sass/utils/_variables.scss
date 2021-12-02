@@ -20,6 +20,7 @@ $font-primary: "Roboto", sans-serif;
 //les ombres
 $shadow: 4px 5px 2px $medium-gray;
 $shadow-hover: 2px 4px 5px 2px darken(whitesmoke, 15%);
+ // shadow-top --> voir @mixins
 
 // les espaces
 $spacebot: 4%;
