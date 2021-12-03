@@ -174,12 +174,12 @@ a {
 .item {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 89%;
   align-self: center;
   border-radius: 20px;
   background-color: white;
   box-shadow: 4px 5px 2px #e8e8e8;
-  margin: 2%;
+  margin-bottom: 6%;
 }
 .item:hover {
   box-shadow: 2px 4px 5px 2px #cfcfcf;
@@ -200,7 +200,6 @@ a {
 }
 
 .item__figure {
-  flex: 60%;
   display: flex;
   justify-content: flex-end;
   object-fit: cover;
@@ -210,7 +209,7 @@ a {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   width: 100%;
-  height: 190px;
+  height: 180px;
   object-position: bottom;
   object-fit: cover;
 }
@@ -219,16 +218,8 @@ a {
     height: 200px;
   }
 }
-
-.image {
-  width: 100%;
-  height: 290px;
-  object-fit: cover;
-}
-@media screen and (min-width: 768px) {
-  .image {
-    height: 400px;
-  }
+.item__img--position {
+  object-position: 50% 60%;
 }
 
 .item__body {
@@ -304,7 +295,8 @@ a {
   color: #2c9c81;
   margin: 5%;
   padding: 1.5% 2% 1% 2%;
-  font-size: 12px;
+  font-size: 16px;
+  font-weight: 500;
   border-radius: 2px;
 }
 @media screen and (min-width: 768px) {
@@ -609,6 +601,7 @@ footer ul {
   display: flex;
   flex-direction: column;
   background-color: whitesmoke;
+  padding-bottom: 7%;
 }
 
 .heading--brand {

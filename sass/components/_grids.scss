@@ -33,12 +33,12 @@
 .item {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 89%;
   align-self: center;
   border-radius: 20px;
   background-color: white;
   box-shadow: $shadow;
-  margin: 2%;
+  margin-bottom: 6%;
   &:hover{
     box-shadow: $shadow-hover;
   }
@@ -55,7 +55,6 @@
 }
 
 .item__figure {
-  flex: 60%;
   display: flex;
   justify-content: flex-end;
   object-fit: cover;
@@ -63,11 +62,11 @@
 
 .item__img {
   @include image-grid;
+  &--position{
+    object-position: 50% 60%;
+  }
 }
 
-.image {
-  @include image;
-}
 
 .item__body {
   display: flex;
@@ -135,7 +134,8 @@
   color: darken($color: $colour-tertiary, $amount: 35%);
   margin: 5%;
   padding: 1.5% 2% 1% 2%;
-  font-size: 12px;
+  font-size: 16px;
+  font-weight: 500;
   border-radius: 2px;
   @include tablette-only {
     margin: 2%;
