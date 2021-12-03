@@ -25,9 +25,9 @@
   }
 }
 .btn__icone {
-  right: 30px;
+  right: 35px;
   z-index: 200;
-  font-size: 25px;
+  font-size: 24px;
   cursor: pointer;
   position: relative;
   align-self: center;
@@ -35,14 +35,15 @@
   margin-bottom: 0;
   &--mov {
     @include btn-heart;
-    font-size: 25px;
+    font-size: 24px;
     position: absolute;
     z-index: 100;
     opacity: 0;
   }
 }
 .section-menu {
-  font-weight: 300;
+  font-size: 15px;
+  font-weight: 400;
   text-transform: uppercase;
   margin-left: 6%;
   margin-bottom: 0%;
@@ -52,9 +53,9 @@
 }
 
 .menu-underline {
-  margin: -13px 5% 5% 6%;
-  font-size: 16px;
-  font-weight: 900;
+  margin: -23px 5% 5% 6%;
+  font-size: 28px;
+  font-weight: 700;
   color: $colour-tertiary;
   @include tablette-only {
     margin-left: 15%;
