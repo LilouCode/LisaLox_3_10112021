@@ -21,6 +21,7 @@
 
 .functioning {
   justify-content: space-around;
+  margin-bottom: 19%;
   @include desktop-only{
     margin-bottom: $spacebot;
   }

@@ -339,7 +339,6 @@ ol {
 li {
   list-style-type: none;
   display: flex;
-  width: 80%;
   padding-right: 4.5%;
 }
 
@@ -351,9 +350,9 @@ li {
 .step__num {
   position: relative;
   left: 13px;
-  padding: 1.8% 2.8% 1% 2.8%;
+  padding: 1.5% 2.5% 0.8% 2.5%;
   font-size: 14px;
-  font-weight: 100;
+  font-weight: 300;
   color: white;
   background-color: #9356dc;
   border-radius: 80px;
@@ -365,15 +364,17 @@ li {
   background-color: whitesmoke;
   border-radius: 20px;
   padding: 8% 12%;
+  margin-block-start: 15px;
+  margin-block-end: 8px;
   width: 80%;
-  box-shadow: 4px 5px 2px #e8e8e8;
+  box-shadow: 1px 5px 10px 3px #e8e8e8;
 }
 .step__text:hover {
   background-color: rgba(146, 86, 220, 0.1);
 }
 
 .list__step {
-  width: 300px;
+  width: 350px;
 }
 .list__step i {
   margin-right: 10%;
@@ -596,6 +597,7 @@ footer ul {
 
 .functioning {
   justify-content: space-around;
+  margin-bottom: 19%;
 }
 @media screen and (min-width: 1024px) {
   .functioning {
