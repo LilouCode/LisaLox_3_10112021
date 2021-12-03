@@ -19,6 +19,8 @@ $font-primary: "Roboto", sans-serif;
 
 //les ombres
 $shadow: 4px 5px 2px $medium-gray;
+$shadow-glow: 1px 5px 10px 3px $medium-gray;
+$shadow-glow--dark: 1px 5px 10px 3px darken(whitesmoke, 15%);
 $shadow-hover: 2px 4px 5px 2px darken(whitesmoke, 15%);
  // shadow-top --> voir @mixins
 

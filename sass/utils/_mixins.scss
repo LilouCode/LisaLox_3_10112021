@@ -14,6 +14,11 @@
   @include tablette-only {
     padding: 17px 37px;
   }
+  &--order{
+    margin-top: 4%;
+    padding: 16px 13%;
+    font-size: 15px;
+  }
 }
 
 @mixin btn-heart {

@@ -41,7 +41,7 @@ li{
   margin-block-start: 15px;
   margin-block-end: 8px;
   width: 80%;
-  box-shadow: 1px 5px 10px 3px $medium-gray;
+  box-shadow: $shadow-glow;
   &:hover{
     background-color: hsla(267, 66%, 60%, 0.1);
   }
