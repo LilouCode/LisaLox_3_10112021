@@ -78,24 +78,3 @@ $page-loaded-delay: $pop-dur;
    margin-left: 120px;
    color: $colour-primary;
   }
-  
-  @keyframes pop {
-    0% {
-      opacity: 1;
-    }
-    85% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-      z-index: -1;
-    }
-  }
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
