@@ -482,6 +482,10 @@ li {
   flex-direction: row;
   justify-content: center;
 }
+.header--page {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
 
 nav a {
   display: flex;
