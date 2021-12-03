@@ -7,10 +7,12 @@
     margin-bottom: $spacebot;
   }
   &--menu {
+    flex-direction: column;
+    justify-content: space-between;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     position: relative;
-    margin-top: -12%;
+    margin-top: -13.5%;
     @include tablette-only {
       border-bottom-left-radius: 50px;
       border-bottom-right-radius: 50px;
