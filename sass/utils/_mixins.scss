@@ -61,7 +61,10 @@
     height: 200px;
   }
 }
-
+@mixin image-menu{
+  object-fit: cover;
+  height: 600px;
+}
 //ombres générées avec cssgenerator.org
 @mixin shadow-top {
     box-shadow: -1px -3px 2px 0px  darken(whitesmoke, 15%);

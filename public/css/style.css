@@ -104,6 +104,59 @@ a {
   color: black;
 }
 
+@keyframes selection {
+  0% {
+    width: 0px;
+  }
+  90%, 100% {
+    opacity: 1;
+    margin-left: 20px;
+  }
+  100% {
+    width: 60px;
+  }
+}
+@keyframes fade-in-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes mov {
+  0% {
+    transform: scaleY(0);
+  }
+  90%, 100% {
+    opacity: 1;
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+@keyframes pop {
+  0% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .btn {
   color: white;
   cursor: pointer;
@@ -285,17 +338,6 @@ a {
   opacity: 0;
 }
 
-@keyframes mov {
-  0% {
-    transform: scaleY(0);
-  }
-  90%, 100% {
-    opacity: 1;
-  }
-  100% {
-    transform: scaleY(1);
-  }
-}
 .item__tag {
   position: absolute;
   background-color: #99e2d0;
@@ -328,8 +370,6 @@ ol {
 }
 @media screen and (min-width: 1024px) {
   ol {
-    margin-left: 5%;
-    margin-right: 5%;
     flex-direction: row;
     justify-content: space-around;
   }
@@ -464,26 +504,6 @@ li {
   color: #9356dc;
 }
 
-@keyframes pop {
-  0% {
-    opacity: 1;
-  }
-  85% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    z-index: -1;
-  }
-}
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 .header {
   display: flex;
   flex-direction: row;
@@ -587,11 +607,13 @@ footer ul {
   -webkit-box-shadow: -1px -3px 3px 0px #cfcfcf;
   -moz-box-shadow: -1px -3px 2px 0px #cfcfcf;
 }
+.local h4 {
+  width: 100%;
+}
 .local i {
   align-self: center;
-  margin-top: -2%;
-  position: absolute;
-  left: 110px;
+  position: relative;
+  left: -2%;
 }
 
 .description {
@@ -613,6 +635,20 @@ footer ul {
   flex-direction: column;
   background-color: whitesmoke;
   padding-bottom: 7%;
+}
+
+.menu img {
+  object-fit: cover;
+}
+@media screen and (min-width: 768px) {
+  .menu img {
+    height: 400px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .menu img {
+    height: 500px;
+  }
 }
 
 .heading-menu {
@@ -807,40 +843,6 @@ footer ul {
   margin: auto;
   font-size: 20px;
   cursor: pointer;
-}
-
-@keyframes selection {
-  0% {
-    width: 0px;
-  }
-  90%, 100% {
-    opacity: 1;
-    margin-left: 20px;
-  }
-  100% {
-    width: 60px;
-  }
-}
-@keyframes fade-in-bottom {
-  0% {
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes mov {
-  0% {
-    transform: scaleY(0);
-  }
-  90%, 100% {
-    opacity: 1;
-  }
-  100% {
-    transform: scaleY(1);
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

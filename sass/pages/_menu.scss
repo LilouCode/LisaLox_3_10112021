@@ -1,3 +1,12 @@
+.menu img{
+  object-fit: cover;
+  @include tablette-only{
+  height: 400px;
+  @include desktop-only{
+    height: 500px;
+  }
+  }
+}
 .heading-menu {
   display: flex;
   justify-content: space-between;
