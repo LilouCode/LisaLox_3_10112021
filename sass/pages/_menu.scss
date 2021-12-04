@@ -7,6 +7,9 @@
   }
   }
 }
+.img-lne{
+  max-height: 250px;
+}
 .heading-menu {
   display: flex;
   justify-content: space-between;
@@ -94,7 +97,7 @@
   cursor: pointer;
   margin-bottom: 4%;
   margin-left: 4%;
-  width: 88%;
+  width: 92%;
   height: 65.5px;
   background-color: white;
   border-radius: 15px;
@@ -123,7 +126,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 10px;
+    padding-left: 8px;
   }
   &__title {
     width: 100%;
