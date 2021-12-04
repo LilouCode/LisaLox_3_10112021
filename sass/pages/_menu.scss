@@ -9,6 +9,13 @@
 }
 .img-lne{
   max-height: 250px;
+  @include tablette-only{
+    min-height: 400px;
+    max-height: 500px;
+  }
+  @include desktop-only{
+    min-height: 500px;
+  }
 }
 .heading-menu {
   display: flex;

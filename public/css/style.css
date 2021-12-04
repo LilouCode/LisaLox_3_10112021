@@ -685,6 +685,17 @@ footer ul {
 .img-lne {
   max-height: 250px;
 }
+@media screen and (min-width: 768px) {
+  .img-lne {
+    min-height: 400px;
+    max-height: 500px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .img-lne {
+    min-height: 500px;
+  }
+}
 
 .heading-menu {
   display: flex;
