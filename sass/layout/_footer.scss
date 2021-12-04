@@ -11,13 +11,13 @@ footer {
         flex-direction: row;
       }
     }
-  }
-.list{
-  & li{
-    @include desktop-only{
-      width: 15% ;
+    & li{
+      @include desktop-only{
+        width: 15% ;
+      }
     }
   }
+.list{
   &__text{
     width: 100%;
     font-weight: 300;
