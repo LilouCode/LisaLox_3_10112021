@@ -14,16 +14,31 @@ header{
 .heading{
     padding-left: $padding-section;
     margin-top: 12%;
+    @include tablette-only{
+        margin-bottom: 7%;
+    }
+    @include desktop-only{
+        margin-top: 6%;
+    }
     &--center{
         align-self: center;
         width: 250px;
         padding-left: 0%;
         margin-top: 10%;
+        @include tablette-only{
+            width: 90%;
+        }
     }
 }
 .logo{
     font-size: 29px;
     font-family: $font-brand;
+    @include tablette-only{
+        margin: 3%;
+    }
+    @include desktop-only{
+        margin: 2%;
+    }
 }
 .item{
     font-size: 16px;

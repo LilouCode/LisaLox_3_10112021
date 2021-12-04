@@ -81,6 +81,12 @@
   &--desserts .card {
     animation: fade-in-bottom 1200ms cubic-bezier(0.39, 0.575, 0.565, 1) 2200ms both;
   }
+  &__section{
+    @include desktop-only{
+      margin-left: 15%;
+      
+    }
+  }
 }
 .card {
   display: flex;
@@ -98,6 +104,9 @@
     margin: auto;
     margin-bottom: 4%;
     width: 70%;
+  }
+  @include desktop-only{
+    width: 40%;
   }
   &:hover {
     & > .card__actions .check {

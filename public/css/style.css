@@ -21,16 +21,41 @@ header {
   padding-left: 4.5%;
   margin-top: 12%;
 }
+@media screen and (min-width: 768px) {
+  .heading {
+    margin-bottom: 7%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .heading {
+    margin-top: 6%;
+  }
+}
 .heading--center {
   align-self: center;
   width: 250px;
   padding-left: 0%;
   margin-top: 10%;
 }
+@media screen and (min-width: 768px) {
+  .heading--center {
+    width: 90%;
+  }
+}
 
 .logo {
   font-size: 29px;
   font-family: "Shrikhand", cursive;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    margin: 3%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .logo {
+    margin: 2%;
+  }
 }
 
 .item {
@@ -177,7 +202,7 @@ a {
 }
 .btn--order {
   margin-top: 4%;
-  padding: 16px 13%;
+  padding: 16px 5%;
   font-size: 15px;
 }
 .btn:hover {
@@ -197,11 +222,6 @@ a {
   background-color: whitesmoke;
   padding-bottom: 5%;
 }
-@media screen and (min-width: 768px) {
-  .grid {
-    margin-bottom: 4%;
-  }
-}
 .grid--menu {
   flex-direction: column;
   justify-content: space-between;
@@ -220,6 +240,7 @@ a {
   .grid--menu {
     background-color: rgba(230, 230, 230, 0.85);
     animation: fade-in-bottom 1200ms cubic-bezier(0.39, 0.575, 0.565, 1) 100ms both;
+    margin-top: -10%;
   }
 }
 
@@ -227,7 +248,7 @@ a {
   .restaurants .grid {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 }
 
@@ -372,6 +393,7 @@ ol {
   ol {
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 4%;
   }
 }
 
@@ -414,6 +436,11 @@ li {
 
 .list__step {
   width: 350px;
+}
+@media screen and (max-width: 360px) {
+  .list__step {
+    width: 97%;
+  }
 }
 .list__step i {
   margin-right: 10%;
@@ -550,7 +577,6 @@ footer {
   background-color: #292929;
   padding-top: 2%;
   padding-bottom: 5%;
-  width: 20%;
   color: white;
 }
 footer ul {
@@ -563,11 +589,16 @@ footer ul {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .list li {
+    width: 15%;
+  }
+}
 .list__text {
   width: 100%;
   font-weight: 300;
   margin: 1.5% 0%;
-  font-size: 16px;
+  font-size: 14px;
   color: white;
 }
 @media screen and (min-width: 1024px) {
@@ -591,7 +622,7 @@ footer ul {
 }
 @media screen and (min-width: 1024px) {
   .list__icone {
-    margin-right: 1%;
+    margin-right: 9%;
   }
 }
 
@@ -744,6 +775,11 @@ footer ul {
 .sheet-menu--desserts .card {
   animation: fade-in-bottom 1200ms cubic-bezier(0.39, 0.575, 0.565, 1) 2200ms both;
 }
+@media screen and (min-width: 1024px) {
+  .sheet-menu__section {
+    margin-left: 15%;
+  }
+}
 
 .card {
   display: flex;
@@ -763,6 +799,11 @@ footer ul {
     margin: auto;
     margin-bottom: 4%;
     width: 70%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 40%;
   }
 }
 .card:hover > .card__actions .check {

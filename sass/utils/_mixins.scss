@@ -16,7 +16,7 @@
   }
   &--order{
     margin-top: 4%;
-    padding: 16px 13%;
+    padding: 16px 5%;
     font-size: 15px;
   }
 }
@@ -81,6 +81,12 @@
 
 @mixin tablette-only {
   @media screen and (min-width: map-get($breakpoints, tablette)) {
+    @content;
+  }
+}
+
+@mixin under-small {
+  @media screen and (max-width: map-get($breakpoints, small-screen)){
     @content;
   }
 }

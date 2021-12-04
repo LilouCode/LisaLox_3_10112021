@@ -9,6 +9,7 @@ ol {
   @include desktop-only{
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: $spacebot;
   }
 }
 
@@ -47,6 +48,9 @@ li{
 }
 .list__step {
   width: 350px;
+  @include under-small{
+    width: 97%;
+  }
   & i{
     margin-right: 10%;
     color: darken($medium-gray, 50%);
